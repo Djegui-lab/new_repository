@@ -10,7 +10,7 @@ classifier = pickle.load(pickle_in)
 def diabete_prediction(entree_data):
     tableau_numpy = np.array(entree_data)
     input_data_reshape = tableau_numpy.reshape(1, -1)
-    prediction =classifier .predict(input_data_reshape)
+    prediction =classifier.predict(input_data_reshape)
 
     if (prediction[0]) == 1:
         return " La personne est  diabetique"
